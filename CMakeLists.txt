@@ -31,8 +31,6 @@ endif()
 # Get current dir path
 set(SCM_DIR "${CMAKE_CURRENT_LIST_DIR}")
 
-message("SCMDIR: ${SCM_DIR}")
-
 # Kernel files
 set(SCM_CORE_SOURCES
     "${SCM_DIR}/core/os_kernel.cpp"
