@@ -8,8 +8,15 @@ project(
     LANGUAGES NONE
 )
 
+# ---- Declare library ----
+
 add_library(scmrtos_scmrtos INTERFACE)
 add_library(scmrtos::scmrtos ALIAS scmrtos_scmrtos)
+
+set_property(
+    TARGET scmrtos_scmrtos PROPERTY
+    EXPORT_NAME scmrtos
+)
 
 # Get config location
 if (NOT SCM_CONFIG_DIR)
